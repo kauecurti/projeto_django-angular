@@ -1,0 +1,24 @@
+<h1>Click no Fornecedor para detalhes e editar</h1>
+
+<table class="alt">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome Empresa</th>
+      <th>Cnpj</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let member of members" (click)="memberClick(member)">
+      <td>{{member.id}}</td>
+      <td>{{member.nome_fantasia}}</td>
+      <td>{{member.cnpj}}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<router-outlet>
+  
+</router-outlet>

@@ -1,0 +1,24 @@
+<h3>Detalhes do Fornecedor</h3>
+<span>Nome e CNPJ</span>: {{ selected_member.nome_fantasia }}  {{ selected_member.cnpj }}<br>
+
+
+<label>ID</label>
+<input type="text" [(ngModel)]="selected_member.id" readonly> <br>
+<label>Nome Empresa</label>
+<input type="text" [(ngModel)]="selected_member.nome_fantasia"> <br>
+<label>Cnpj</label>
+<input type="text" [(ngModel)]="selected_member.cnpj"><br>
+<label>Cidade</label>
+<input type="text" [(ngModel)]="selected_member.city"><br>
+<label>Email</label>
+<input type="text" [(ngModel)]="selected_member.email"><br>
+<button (click)="update()" class="button">Update Fornecedor</button>
+<button (click)="delete()" class="button">Delete Fornecedor</button>
+<button (click)="newMember()" class="button primary">Novo</button>
+<h3>Produtos</h3>
+<label>Nome do Produto</label>
+<input type="text" [(ngModel)]="selected_product.name_product"><br>
+<label>Preço do Produto</label>
+<input type="text" [(ngModel)]="selected_product.price"><br>
+<button (click)="update1()" class="button">Alterar Produto</button>
+<button (click)="delete1()" class="button">Deletar Produto</button>
