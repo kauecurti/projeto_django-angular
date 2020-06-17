@@ -134,5 +134,5 @@ STATIC_URL = '/static/'
 
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:4200",
-    "http://35.235.59.6"
+    "http://34.66.92.172"
 ]
