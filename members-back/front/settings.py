@@ -25,7 +25,7 @@ SECRET_KEY = 'vrh-04g&)$9ij#fe+-_h7j(zm(s1u03y%%yz0u*20$)c&q6fge'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['34.66.92.172', 'localhost', '127.0.0.1']
 
 
 # Application definition
