@@ -25,7 +25,7 @@ SECRET_KEY = 'vrh-04g&)$9ij#fe+-_h7j(zm(s1u03y%%yz0u*20$)c&q6fge'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['34.68.174.234', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['35.188.65.1', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -87,9 +87,17 @@ WSGI_APPLICATION = 'front.wsgi.application'
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'local': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    },
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'djangodb',
+        'USER': 'django',
+        'PASSWORD': 'root',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
@@ -134,5 +142,5 @@ STATIC_URL = '/static/'
 
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:4200",
-    "http://34.68.174.234"
+    "http://35.188.65.1"
 ]
